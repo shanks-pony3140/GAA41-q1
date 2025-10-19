@@ -56,7 +56,7 @@ def execute(q: str):
         }
 
     # Office Issue Reporting
-    issue_match = re.search(r"Report office issue (\d+) for the (.*) department.", q)
+    issue_match = re.search(r"File issue (\d+) in (.*)", q)
     if issue_match:
         return {
             "name": "report_office_issue",
